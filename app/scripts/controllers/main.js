@@ -8,10 +8,6 @@
  * Controller of the angularTestApp
  */
 angular.module('angularTestApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainCtrl', function ($scope) {
+    $scope.tareas = ['Item1', 'Item2', 'Item3'];
   });
