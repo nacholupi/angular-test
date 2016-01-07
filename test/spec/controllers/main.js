@@ -18,20 +18,20 @@ describe('Controller: MainCtrl', function () {
   }));
 
   it('No debe tener items al empezar', function () {
-    expect(scope.tareas.length).toBe(3);
+    expect(scope.tareas.length).toBe(0);
   });
 
   it('Agrego un item', function () {
     scope.tarea='Nueva tarea';
     scope.addTarea();
-    expect(scope.tareas.length).toBe(4);
+    expect(scope.tareas.length).toBe(1);
   });
 
   it('Agrego y elimino un item', function () {
     scope.tarea='Nueva tarea';
     scope.addTarea();
-    scope.eliminarTarea(3);
-    expect(scope.tareas.length).toBe(3);
+    scope.eliminarTarea(0);
+    expect(scope.tareas.length).toBe(0);
   });
 
 
